@@ -105,16 +105,13 @@ export async function POST(req: NextRequest) {
         socketTimeout: 15_000,
       });
 
-      // Fire and forget - responde pro usuário imediatamente
-      transporter
-        .sendMail({
-          from: `"Mini Projetor HD" <${destEmail}>`,
-          to: destEmail,
-          subject: `Novo Pedido — ${nome}`,
-          html: emailHtml,
-        })
-        .then(() => console.log("Email enviado com sucesso para", destEmail))
-        .catch((err: unknown) => console.error("Erro ao enviar email:", err));
+      await transporter.sendMail({
+        from: `"Mini Projetor HD" <${destEmail}>`,
+        to: destEmail,
+        subject: `Novo Pedido — ${nome}`,
+        html: emailHtml,
+      });
+      console.log("Email enviado com sucesso para", destEmail);
     } else {
       // Fallback: log no servidor (para testes)
       console.log("=== NOVO PEDIDO ===");
