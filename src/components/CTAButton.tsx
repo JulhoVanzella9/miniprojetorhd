@@ -22,9 +22,7 @@ export default function CTAButton({
   return (
     <div className={`flex flex-col items-center gap-2 ${className}`}>
       <motion.a
-        href="https://compraonlinesegurada.org.ua/c/319b7470f2"
-        target="_blank"
-        rel="noopener noreferrer"
+        href="/checkout"
         className={`inline-flex items-center justify-center font-extrabold bg-accent hover:bg-accent-dark text-background rounded-full shadow-lg shadow-accent/25 transition-colors tracking-wide ${sizeClasses}`}
         whileHover={{ scale: 1.03 }}
         whileTap={{ scale: 0.97 }}

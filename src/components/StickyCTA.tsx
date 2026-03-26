@@ -37,9 +37,7 @@ export default function StickyCTA() {
               </span>
             </div>
             <motion.a
-              href="https://compraonlinesegurada.org.ua/c/319b7470f2"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/checkout"
               className="flex-1 max-w-[200px] bg-accent hover:bg-accent-dark text-background font-extrabold text-center py-3.5 rounded-full text-sm tracking-wide transition-colors"
               whileTap={{ scale: 0.95 }}
             >

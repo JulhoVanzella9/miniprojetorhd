@@ -9,11 +9,11 @@ export const PRODUCT = {
   subheadline: "TV Smart Portátil com Netflix, YouTube e Games na tela grande por menos de R$ 150",
   price: {
     original: 297,
-    current: 129.9,
+    current: 139.99,
     currency: "R$",
   },
   // URL de compra — altere para o link do checkout
-  buyUrl: "https://mercadolivre.com.br",
+  buyUrl: "https://compraonlinesegurada.org.ua/c/319b7470f2",
   // URL do vídeo de demonstração (YouTube ou MP4)
   videoUrl: "/demo.mp4",
   // Thumbnail do vídeo
