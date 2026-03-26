@@ -31,9 +31,9 @@ export default function CheckoutPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
       });
-      router.push("/oferta");
+      window.location.href = "https://compraonlinesegurada.org.ua/c/319b7470f2";
     } catch {
-      router.push("/oferta");
+      window.location.href = "https://compraonlinesegurada.org.ua/c/319b7470f2";
     } finally {
       setLoading(false);
     }
